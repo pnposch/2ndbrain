@@ -1,0 +1,3 @@
+[submodule "content2"]
+	path = content2
+	url = git@github.com:pnposch/2bcon.git
