@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-UK, de-AT",
+    locale: "en-US",
     baseUrl: "2ndb.posch.org",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",

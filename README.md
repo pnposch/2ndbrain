@@ -1,8 +1,8 @@
 [![Deploy Quartz site to GitHub Pages](https://github.com/pnposch/2ndbrain/actions/workflows/deploy.yaml/badge.svg)](https://github.com/pnposch/2ndbrain/actions/workflows/deploy.yaml)
 
 # 2nd Brain
-Inspired by [https://github.com/sspaeti/second-brain-public](this) I went out to setup my own 2nd brain.
-Here is the public build repo - The source. Setup see below.
+Inspired by [SSpaeti](https://github.com/sspaeti/second-brain-public) I went out to setup my own 2nd brain.
+Here is the public build repo - The source forked from https://github.com/jackyzha0/quartz. Setup see below.
 
 ## Repo 1 The Source
 Here the clone of Quartz lives, this repo here
