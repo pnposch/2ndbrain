@@ -20,10 +20,17 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Quartz
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for git info
-          submodules: recursive # Add this line
+  
+     # Step 2: Checkout the private content repository into the 'content' directory
+      - name: Checkout Content Repo
+        uses: actions/checkout@v4
+        with:
+          repository: your-github-username/your-private-content-repo # Replace with your repo's path
+          path: content # This is the directory where the repo will be cloned
           ssh-key: ${{ secrets.READ_KEY }}
       - uses: actions/setup-node@v4
         with:
