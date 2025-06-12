@@ -1,10 +1,10 @@
 [![Deploy Quartz site to GitHub Pages](https://github.com/pnposch/2ndbrain/actions/workflows/deploy.yaml/badge.svg)](https://github.com/pnposch/2ndbrain/actions/workflows/deploy.yaml)
 
 # 2nd Brain
-Inspired by [https://github.com/sspaeti/second-brain-public] (this) I went out to setup my own 2nd brain.
+Inspired by [https://github.com/sspaeti/second-brain-public](this) I went out to setup my own 2nd brain.
 Here is the public build repo - The source. Setup see below.
 
-# Repo 1 The Source
+## Repo 1 The Source
 Here the clone of Quartz lives, this repo here
 
 When cloning repo1 include the submodule of Repo 2:
@@ -68,7 +68,7 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-# Repo 2 The Content
+## Repo 2 The Content
 Here only the content lives. This is included into repo 1 as submodule
 ```
 git submodule add <user>/<repo1> content
@@ -119,6 +119,6 @@ ssh-keygen -f deploy_key -N ""
 ```
 put the private key as variable DEPLOY_KEY into the repo2's secrets and the public key as deployment key to repo1
 
-# Quartz v4
+## Quartz v4 - The Engine
 🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
 
