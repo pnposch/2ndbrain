@@ -8,7 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      Blog: "https://posch.org",
+      Blog: "https://b.posch.org",
     },
   }),
 }
@@ -64,4 +64,25 @@ export const defaultListPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [],
+}
+export const defaultContentPageLayout: PageLayout = {
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta({ showReadingTime: false }),
+    Component.TagList(),
+  ],
+  left: [
+    Component.DesktopOnly(Component.PageTitle()),
+    Component.DesktopOnly(Component.Explorer({
+      folderClickBehavior: "link",
+      folderDefaultState: "collapsed",
+      useSavedState: true,
+    })),
+  ],
+  right: [
+    Component.DesktopOnly(Component.Graph()),
+    Component.TableOfContents(),
+    Component.DesktopOnly(Component.Backlinks()),
+  ],
 }
