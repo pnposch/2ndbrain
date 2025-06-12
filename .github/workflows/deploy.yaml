@@ -29,7 +29,7 @@ jobs:
       - name: Checkout Content Repo
         uses: actions/checkout@v4
         with:
-          repository: your-github-username/your-private-content-repo # Replace with your repo's path
+          repository: pnposch/2bcon # Replace with your repo's path
           path: content # This is the directory where the repo will be cloned
           ssh-key: ${{ secrets.READ_KEY }}
       - uses: actions/setup-node@v4
