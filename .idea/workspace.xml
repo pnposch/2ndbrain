@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dedbe341-62d2-4dd7-a8eb-d006012c4dfb" name="Changes" comment="changes">
+      <change beforePath="$PROJECT_DIR$/.idea/09SecondBrain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/09SecondBrain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content" beforeDir="false" afterPath="$PROJECT_DIR$/content" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/gpx/Mondsee-Radmarathon-B-140km.gpx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/route.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quartz.layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quartz.layout.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
       <workItem from="1749714802110" duration="418000" />
       <workItem from="1749717081970" duration="2247000" />
       <workItem from="1749719374224" duration="1406000" />
-      <workItem from="1749723960558" duration="1526000" />
+      <workItem from="1749723960558" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
