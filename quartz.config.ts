@@ -15,11 +15,12 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "en-UK, de-AT",
     baseUrl: "2ndb.posch.org",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
+      css: ["quartz/styles/custom.scss"],
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
