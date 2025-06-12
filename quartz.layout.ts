@@ -4,13 +4,20 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [ Component.PageTitle(),
+            Component.Flex({
+                      components: [
+                        {
+                          Component: Component.Search(),
+                          grow: true,
+                        },
+                        { Component: Component.Darkmode() },
+                        { Component: Component.ReaderMode() },
+                      ],
+                    }),
+            ],
   afterBody: [],
-  footer: Component.Footer({
-    links: {
-      Blog: "https://b.posch.org",
-    },
-  }),
+  footer: Component.Footer( ),
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -25,64 +32,26 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
-    }),
-    Component.Explorer(),
+    // Component.PageTitle(),
+    // Component.MobileOnly(Component.Spacer()),
+    //
+    // Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
-  ],
+    // Component.Graph(),
+    // Component.DesktopOnly(Component.TableOfContents()),
+     Component.Backlinks(),
+     Component.DesktopOnly(Component.TableOfContents()),
+     Component.Graph(),
+     ],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [
-    Component.PageTitle(),
+  right: [
     Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-      ],
-    }),
     Component.Explorer(),
   ],
-  right: [],
-}
-export const defaultContentPageLayout: PageLayout = {
-  beforeBody: [
-    Component.Breadcrumbs(),
-    Component.ArticleTitle(),
-    Component.ContentMeta({ showReadingTime: false }),
-    Component.TagList(),
-  ],
-  left: [
-    Component.DesktopOnly(Component.PageTitle()),
-    Component.DesktopOnly(Component.Explorer({
-      folderClickBehavior: "link",
-      folderDefaultState: "collapsed",
-      useSavedState: true,
-    })),
-  ],
-  right: [
-    Component.DesktopOnly(Component.Graph()),
-    Component.TableOfContents(),
-    Component.DesktopOnly(Component.Backlinks()),
-  ],
+ left: [],
 }
